@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <title>Classroom Pass</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Classroom Pass home">
+          <span class="brand-mark" aria-hidden="true">CP</span>
+          <span>
+            <strong>Classroom Pass</strong>
+            <small>A calmer way to step out</small>
+          </span>
+        </a>
+        <div class="mode-switch" role="group" aria-label="Choose app mode">
+          <button class="mode-button is-active" type="button" data-mode="student" aria-pressed="true">Student</button>
+          <button class="mode-button" type="button" data-mode="teacher" aria-pressed="false">Teacher</button>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+        <section id="student-view" class="view" aria-labelledby="student-heading"></section>
+        <section id="teacher-view" class="view" aria-labelledby="teacher-heading" hidden></section>
+      </main>
+
+      <footer class="app-footer">
+        <span>Classroom Pass</span>
+        <span>Your pass information stays in this browser.</span>
+      </footer>
+    </div>
+  </body>
+</html>
